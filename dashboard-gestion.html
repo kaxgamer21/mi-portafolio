@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Gestión|KAX.SAU</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Proyecto Escolar | Promocion 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+<body>
 
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-5xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black text-cyan-400">KAX<span class="text-white">.SAU</span></a>
-            <a href="index.html" class="bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-200 text-sm font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-2">
-                ← Volver al Portafolio
-            </a>
-        </div>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">🚀 MiProyecto</div>
+        <nav style="display: flex; align-items: center; gap: 1rem;">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre el Proyecto</a>
+            <a href="#funcionamiento">Funcionamiento</a>
+            <a href="#galeria">Galería</a>
+            <!-- Botón para volver al index principal -->
+            <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+        </nav>
     </header>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4 block">Proyecto Técnico</span>
-        <h1 class="text-5xl font-extrabold mb-6">Dashboard de Gestión</h1>
-        <p class="text-xl text-slate-400 max-w-2xl mb-10">
-            Panel interactivo desarrollado para la visualización de datos en tiempo real, consumo de APIs y gestión eficiente de estado con JavaScript moderno.
-        </p>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Innovación y Tecnología en Acción</h1>
+            <p>Desarrollando el futuro paso a paso para nuestra presentación final.</p>
+            <a href="#sobre" class="btn">Conocer Más</a>
+        </div>
+    </section>
+
+    <!-- Sobre el Proyecto -->
+    <section id="sobre" class="container">
+        <h2>¿De qué trata el proyecto?</h2>
+        <p class="section-desc">Aquí puedes redactar una breve descripción del propósito principal, los objetivos que buscas alcanzar y la motivación detrás de la idea.</p>
         
-        <div class="w-full h-80 bg-slate-900 border border-slate-800 rounded-3xl p-4 shadow-2xl flex items-center justify-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-slate-950/50 backdrop-blur-[2px]"></div>
-            <div class="text-slate-500 font-mono text-sm border border-slate-800 px-4 py-2 rounded-lg bg-slate-900">
-                [ Simulación de Interfaz: Gráficos y Datos en Tiempo Real ]
+        <div class="cards-grid">
+            <div class="card">
+                <h3>💡 Objetivo</h3>
+                <p>Plantear una solución eficiente y aplicable al problema seleccionado.</p>
+            </div>
+            <div class="card">
+                <h3>⚙️ Tecnología</h3>
+                <p>Uso de herramientas de hardware y software integradas.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Impacto</h3>
+                <p>Demostración práctica de los conocimientos adquiridos en la secundaria.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800">
-        <h2 class="text-3xl font-bold mb-12">Detalles Técnicos</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4 text-cyan-400">Stack Tecnológico</h3>
-                <ul class="space-y-3 text-slate-400">
-                    <li>• <strong>Framework:</strong> JavaScript (ES6+)</li>
-                    <li>• <strong>Estilos:</strong> Tailwind CSS</li>
-                    <li>• <strong>Integración:</strong> REST API</li>
-                    <li>• <strong>Estado:</strong> Gestión de estado reactiva</li>
-                </ul>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4 text-cyan-400">Funcionalidades</h3>
-                <ul class="space-y-3 text-slate-400">
-                    <li>• Consumo dinámico de servicios externos.</li>
-                    <li>• Representación visual mediante gráficos.</li>
-                    <li>• Manejo de eventos y actualizaciones de UI.</li>
-                </ul>
+    <!-- Funcionamiento -->
+    <section id="funcionamiento" class="bg-alt">
+        <div class="container">
+            <h2>¿Cómo Funciona?</h2>
+            <p class="section-desc">Detalles técnicos del desarrollo y proceso de ensamblaje.</p>
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <h4>Diseño y Planificación</h4>
+                    <p>Esquematización de circuitos, diagramas de flujo y selección de materiales.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <h4>Desarrollo / Ensamblaje</h4>
+                    <p>Construcción física del prototipo y programación de la lógica.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <h4>Pruebas y Ajustes</h4>
+                    <p>Calibración final para garantizar un rendimiento óptimo.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 px-6 border-t border-slate-800 text-center">
-        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="text-slate-600 text-sm">© 2026 KAX.SAU - Dashboard de Gestión</p>
-            <a href="index.html" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold transition-colors">
-                ← Ir al inicio
-            </a>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>Promoción 2026 &copy; San Lorenzo, Paraguay.</p>
     </footer>
 
 </body>
