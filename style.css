@@ -43,6 +43,22 @@ nav a:hover {
     color: #38bdf8;
 }
 
+/* Estilo para el botón de volver */
+.btn-volver {
+    background-color: #1e293b !important;
+    border: 1px solid #334155;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #38bdf8 !important;
+    font-weight: 600;
+    transition: all 0.3s ease !important;
+}
+
+.btn-volver:hover {
+    background-color: #38bdf8 !important;
+    color: #0f172a !important;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
